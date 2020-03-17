@@ -4,7 +4,7 @@ from mysql.connector import Error as err
 
 def mnuchinPresser():
 
-    cnx = mysql.connector.connect(user='root', password='Sergen1ver2', host='127.0.0.1', database='StockPipeline')
+    cnx = mysql.connector.connect(user='user', password='password', host='127.0.0.1', database='StockPipeline')
     cnx.connect()
     cursor = cnx.cursor()
 

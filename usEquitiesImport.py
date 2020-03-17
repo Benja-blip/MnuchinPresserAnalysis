@@ -8,8 +8,8 @@ chosen_ones = []
 def get_tickers():
 
     base_url = 'https://paper-api.alpaca.markets'
-    api_key_id = 'PKD01L4TQNX03S47FE22'
-    api_secret = 'nXhSyLXp8eyEgvGrans01vy3h69XiXiJ4SOIjZcs'
+    api_key_id = 'API_KEY'
+    api_secret = 'SECRET_KEY'
 
     api = tradeapi.REST(
         base_url=base_url,
@@ -40,7 +40,7 @@ def get_tickers():
 
 def database_insert():
 
-    cnx = mysql.connector.connect(user='root', password='Sergen1ver2', host='127.0.0.1', database='StockPipeline')
+    cnx = mysql.connector.connect(user='user', password='password', host='127.0.0.1', database='StockPipeline')
     cnx.connect()
     cursor = cnx.cursor()
 
